@@ -4,7 +4,7 @@ function ProductForm() {
 const [productName, setProductName] = useState("");
 const [price, setPrice] = useState(0);
 const submit = () => {
-axios.post("http://localhost:8080/api/products", {
+axios.post("/api/products", {
 productName,
 price
 });

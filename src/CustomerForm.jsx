@@ -4,7 +4,7 @@ function CustomerForm() {
 const [name, setName] = useState("");
 const [email, setEmail] = useState("");
 const submit = () => {
-axios.post("http://localhost:8080/api/customers", {
+axios.post("/api/customers", {
 name,
 email
 });
